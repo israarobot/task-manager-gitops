@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: manager-web
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: manager-web
+  template:
+    metadata:
+      labels:
+        app: manager-web
+    spec:
+      containers:
+      - name: manager-web
+        image: israarobot/task-manager-web:latest
+        ports:
+        - containerPort: 80

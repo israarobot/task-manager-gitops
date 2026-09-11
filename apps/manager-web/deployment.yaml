@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: manager-web
-        image: israa23/task-manager-web:1dd47bf
+        image: israa23/task-manager-web:6429898
         ports:
         - containerPort: 3000

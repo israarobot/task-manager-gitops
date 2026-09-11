@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: israa23/task-manager-backend:1dd47bf
+        image: israa23/task-manager-backend:6429898
         ports:
         - containerPort: 8000
         envFrom:
